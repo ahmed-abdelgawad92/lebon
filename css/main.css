@@ -2998,9 +2998,24 @@ ul#nav li a{
 }
 .service-img{
   border-radius: 8px;
-  border: 5px solid #ccc;
+  border: 5px solid rgb(150,130,41);
+}
+#social_links{
+  position: absolute;
+  bottom: 55px;
+  right: 60px;
+}
+img.social_links{
+  width: 30px !important;
+  height: 30px !important;
+}
+.hide{
+  display: none;
 }
 @media (max-width:767px){
+  #social_links{
+    display: none;
+  }
   .navbar-header{
     height: 50px;
   }
@@ -3010,9 +3025,19 @@ ul#nav li a{
   }
   ul#nav{
     position: relative;
+    right: 0;
+    bottom: 0;
   }
   #counter{
     margin-top: 0;
+  }
+  ul#nav li{
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  ul#nav li a{
+    padding: 15px 15px;
+    border-right: 0;
   }
 }
 p{
@@ -3165,7 +3190,7 @@ ul.experiences li a{
 section.work_gallery{
   padding-bottom: 60px !important;
 }
-section.work_gallery:nth-of-type(even){
+section.work_gallery:nth-of-type(even),section.service_item:nth-of-type(odd){
   background: rgb(55,52,41);
 }
 section.work_gallery:nth-of-type(even) h1{
@@ -3187,4 +3212,17 @@ textarea{
 .btn-gold{
   background: #9a8400;
   border-radius: 10px !important;
+}
+
+/*******************************Services Page******************************/
+
+.img-square{
+  width: 100%;
+}
+.img-rectangle{
+  width: 100%;
+}
+.service_item{
+  padding :100px 0;
+  border-bottom: 35px solid rgb(150,130,41);
 }

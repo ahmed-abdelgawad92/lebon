@@ -201,5 +201,19 @@ $(document).ready(function(){
 				}
 
 			});
+			$(window).resize(function(){
+				$(".img-square").each(function(){
+					$(this).height($(this).width());
+				});
+				$(".img-rectangle").each(function(){
+					$(this).height($(this).width()/1.5);
+				});
+			});
+			$(".img-rectangle").each(function(){
+				$(this).height($(this).width()/1.5);
+			});
+			$(".img-square").each(function(){
+				$(this).height($(this).width());
+			});
 
  });
